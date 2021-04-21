@@ -46,7 +46,7 @@ class UserAPI(viewsets.ModelViewSet):
 
 
 ## User Api for personal
-class PersonalUser(generics.RetrieveAPIView):
+class PersonalUser(generics.RetrieveUpdateAPIView):
     serializer_class = UserSerializer
     permission_classes = [
         permissions.IsAuthenticated

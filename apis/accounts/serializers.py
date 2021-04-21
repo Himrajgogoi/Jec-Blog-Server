@@ -10,7 +10,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
     
    class Meta:
        model = UserProfile
-       fields = ('bio', 'dp',)
+       fields = "__all__"
 
 
 ## User Serializer
